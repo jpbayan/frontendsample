@@ -1,0 +1,369 @@
+html {
+    font-size: 18px!important;
+}
+
+body {
+	position: fixed;
+    overflow: hidden;
+    width: 100%;
+	height: 900px;
+    max-height: 100%;
+}
+
+
+.homebutton {
+	padding: 10px;
+}
+.zoominfo {
+	vertical-align: middle !important;
+}
+  .card  {
+    display: flex;
+    /*min-height: 100vh;*/
+	min-height: 100%;
+    flex-direction: column;
+  }
+
+  .appcontainer  {
+    flex: 1 0 auto;
+	height: 400px;
+    max-height: 100%;
+    overflow-y: scroll;
+  }
+  
+  .appcontainer  p {
+    padding-left: 20px; 
+	padding-right: 20px;
+  }  
+  
+.card .card-image {
+    border-bottom: 2px solid #fff;
+	max-height: 300px;
+    overflow: hidden;
+}  
+  
+  
+  ol.numeric {list-style-type: numeric;}
+  
+  ol li, ul li {margin-bottom: 10px; padding-left: 20px; padding-right: 20px;}
+  
+  ol li ol li {margin-bottom: 10px; padding-left: 0px; padding-right: 0px;}
+  
+  ol li ol {list-style-type: lower-alpha;}
+
+  
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 10%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.panzoom-parent {
+	height:100%;
+	overflow: scroll!important;
+}
+
+.inverted-contain .panzoom { 
+	height: 100%; 
+	overflow: hidden;
+}
+.closeicon {
+	z-index: 1000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: white;
+    padding: 10px;
+}	
+
+.card .card-content .card-title {
+    font-weight: bold;
+}
+
+.card .card-reveal {
+	background-color: #fab325;
+}
+
+.container .row {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.modal {
+    position: absolute!important;
+    height: 100%!important;
+	max-height: 85%!important;
+    width: 100%!important;
+	top: 0!important;
+	overflow:hidden!important;
+}
+.addremove {
+	position: fixed;
+    bottom: 0;
+    width: 48%;
+    background: white;
+}
+
+img.instruction-image {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.modal .modal-content {
+    padding: 0!important;
+	height: 100%;
+}
+
+.card {
+  margin: 0px;
+  background-color:  #fab325;
+}
+
+.card .card-action {
+	background: #f7ac39;
+}
+
+.redtext {
+	color: red;
+}
+
+.greentext {
+	color: green;
+}
+
+.backbutton {
+	position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 8px;
+}
+
+.textresult {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+ul {
+	padding-left: 40px!important;
+}
+
+ul > li {
+    list-style-type: disc!important;
+	margin-bottom: 10px;
+}
+
+
+
+.textresult.bold {
+	font-weight: bold;
+}
+
+.btn-large.btn-white, .card .card-action  .btn-large.btn-white {
+	border-radius: 100px;
+    width: 100%;
+    background: #fff;
+    color: #fcb831;
+    text-transform: none;
+    font-size: 18px;
+    height: 60px;
+    border: 1PX SOLID #FFF;
+}
+
+.card .card-action  .btn-large{
+border-radius: 100px;
+    width: 100%;
+    background: inherit;
+    color: #fff;
+    text-transform: none;
+    font-size: 100%;
+    height: 60px;
+    border: 1PX SOLID #FFF;
+	font-weight: 300;
+	padding: 0 5px!important;
+}
+
+.backtohome {
+	position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 8px;	
+	transform: translate(-50%, 0);
+	background: #fcc65a;
+    border: 1px solid #fff;
+}
+
+.card .card-content {
+	padding: 24px 0 0 0!important;
+}
+.container {
+  text-align: center;
+  width: 100%!important;
+  max-width: 1024px;
+	height: 100%;  
+}
+
+.roundiconnavigate {
+	border-radius: 50%!important;
+    background: #fff;
+    color: #fcb326;
+    padding: 5px;
+    font-size: 2rem!important;
+    border: 1px solid #fff;
+}
+
+.roundiconinactive {
+	border-radius: 50%!important;
+    background: #fcc65a;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 3rem!important;
+    border: 1px solid #fff;
+}
+
+.roundiconactive {
+	border-radius: 50%!important;
+    background: #fff;
+    color: #fcb326;
+    padding: 7px 20px;
+    font-size: 3rem!important;
+    border: 1px solid #fff;
+}
+
+.materialboxed.active {
+	width: auto!important;
+	height: auto!important;
+	left: 0!important;
+	top: 0!important;
+}
+
+#materialbox-overlay {
+    position: absolute;
+    top: -20%!important;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #292929;
+    z-index: 1000;
+    will-change: opacity;
+    width: 200%!important;
+}
+
+/* Styles the thumbnail */
+
+a.lightbox img {
+height: 150px;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+margin: 94px 20px 20px 20px;
+}
+
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+position: fixed;
+left: 0;
+z-index: 1;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+margin: auto;
+position: absolute;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+max-height: 0%;
+max-width: 0%;
+border: 3px solid white;
+box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Styles the close link, adds the slide down transition */
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+/* Provides part of the "X" to eliminate an image from the close link */
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
